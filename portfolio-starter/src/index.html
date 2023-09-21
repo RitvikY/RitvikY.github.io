@@ -1,12 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio Page</title>
-    <meta name="description" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="section" >
+       <img src = "images/ritvikLogo.png" alt="logo" width="3000px", height="auto">
+    </div>
+    <!-- Reference the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for hiding/showing content */
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        // JavaScript to toggle content visibility
+        document.addEventListener("DOMContentLoaded", function() {
+            // Initially hide all content sections
+            const contentSections = document.querySelectorAll('.content-section');
+            contentSections.forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Show content when a header is clicked
+            const headerLinks = document.querySelectorAll('nav a');
+            headerLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        // Hide all content sections
+                        contentSections.forEach(section => {
+                            section.classList.add('hidden');
+                        });
+                        // Show the selected content section
+                        targetSection.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-  <p>Hello World</p>
-  <a href="about.html">About me!</a>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+
+    <!-- Content sections (hidden by default) -->
+    <div class="container content-section hidden" id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Ritvik!</p>
+    </div>
+
+    <div class="container content-section hidden" id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+
+    <div class="container content-section hidden" id="experience">
+        <h2>Work Experience</h2>
+        <div class="card">
+            <h3>Job Title 1</h3>
+            <p>Description of work experience 1.</p>
+        </div>
+        <div class="card">
+            <h3>Job Title 2</h3>
+            <p>Description of work experience 2.</p>
+        </div>
+        <!-- Add more work experience cards as needed -->
+    </div>
+
+    <div class="container content-section hidden" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch with me, you can reach me at <a href="mailto:ritvik@example.com">ritvik@example.com</a>.</p>
+    </div>
 </body>
 </html>
