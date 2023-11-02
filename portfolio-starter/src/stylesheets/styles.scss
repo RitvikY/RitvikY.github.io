@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #76b3ed; /* Pastel blue background */
+  color: #5A88A3; /* Darker blue for text */
+}
+
+header {
+  background-color: #B4D6E7; /* Slightly darker pastel blue for header */
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: #5A88A3; /* Darker blue for links */
+  margin: 0 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #B4D6E7; /* Darker shade when hovering over links */
+  color: white;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.card {
+  background-color: #CBE2F2; /* Lighter shade for cards */
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}

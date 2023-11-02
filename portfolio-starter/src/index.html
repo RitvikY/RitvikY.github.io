@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container content-section" id="about">
+        <h2>About Me</h2>
+        <p>Hi! My name is Ritvik Yaragudipati. I am currently junior pursuing a Computer Science major with a minor in Cybersecurity (ACES) at the University of Maryland. I am currently involved with the Quest Honors consulting program as well as the Gemstone Honors research program. My interests include data analysis, software engineering, full stack development, and technology consulting.<br></p>
+
+        <p> <br><br>Contact Information:</p>
+        <p>
+
+
+            All inquiries can be sent to my email: <a href = "mailto: yaragudi.ritvik@gmail.com">yaragudi.ritvik@gmail.com</a>
+           <br> LinkedIn: <a href="https://www.linkedin.com/in/ritviky913/">Click Here</a>
+
+           <br> I look forward to connecting with you!</p>
+    </div>
+
+    <div class="container content-section" id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>AI Detection for Non-Small Cell Lung Cancer</h3>
+            <p>Detection of Cancer (Team DOC) – Gemstone Honors Program</p>
+            
+             <div class="expanded-content hidden">
+                    <ul>
+                        <li>Spearheading research to enhance the efficiency of artificial intelligence models in detecting Non-Small Cell Lung Cancer beyond the existing 88.6% accuracy</li>
+                        <li>Designing a cost-effective and accessible detection model specifically tailored for implementation in third-world countries. Leveraging Python and cutting-edge tools including Tensorflow, Deep Learning, GANs, CNNs, etc.</li>
+                    </ul>
+
+                </div>
+        </div>
+        <div class="card">
+            <h3>Realtime Chatroom</h3>
+            <div class="expanded-content hidden">
+                <p>Developed a WebSocket-based full stack chatroom application with user registration, utilizing Java, Spring Framework, and Hibernate for backend API’s. Implemented the user interface using React, HTML, CSS, Javascript, and the STOMP messaging protocol, with future deployment planned on a MySQL</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-section" id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <img src="images/capitalOneJPG.png" alt="Description of image">
+                <h3>Capital One</h3>
+                <div class="expanded-content hidden">
+                    <p>Software Engineering Intern</p>
+                    <ul>
+                        <li>Developing an AWS Fargate application to effectively detect credit card fraud transactions and integrate data into a PostgreSQL database while leveraging Java, Spring Boot Kafka, Mockito, and Maven build automation.</li>
+                        <li>Incorporating application into production environment through a Jenkins pipeline, while implementing automated CI/CD processes to facilitate efficient integration, testing, and deployment.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="images/LMPNG.png" alt="Description of image">
+                <h3>Lockheed Martin </h3>
+                <div class="expanded-content hidden">
+                    <p>Software Engineering Intern</p>
+                    <ul>
+                        <li>Constructed a live analytical dashboard via ELK stack, with Kibana and Vega employed for creating custom visualizations. Processed DIS simulation data through Elasticsearch and Logstash, providing comprehensive real-time insights for military</li>
+                        <li>Developed an ActiveMQ listener Python script incorporating the STOMP.py library and Apache ActiveMQ Artemis to transform DIS packets from Lockheed simulations into JSON format compatible with</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="images/ScorePng.jpeg" alt="Description of image">
+                <h3>Score Association</h3>
+                <div class="expanded-content hidden">
+                    <p>Data Analytics Consultant</p>
+                    <ul>
+                        <li>Conducted in-depth analysis of Facebook and Google Business engagement trends for Score Association's 256 offices, employing OLS regression models with Pandas, Statsmodel, and Scikit-learn</li>
+                        <li>Utilized Natural Language Processing and Sentiment Analysis techniques on Score's dataset of over 100,000 observations using NumPy, Matplotlib, NLTK, and Seaborn to optimize post retention, resulting in regional and national recommendations for up to 14% improved</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="experience-card">
+                <img src="images/edlyftpng.png" alt="Description of image">
+                <h3>Edlyft</h3>
+                <div class="expanded-content hidden">
+                    <p>Computer Science Intern</p>
+                    <ul>
+                        <li>Mentored 140 undergraduate students in advanced Java Object Oriented Programming, achieving a 23% average grade improvement last semester</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content-section" id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="path/to/send-email.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
