@@ -1,21 +1,20 @@
+
 /* Reset some default styles */
-body, h1, h2, p {
+body h1 h2 p {
     margin: 0;
     padding: 0;
 }
 
-
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ECE3CE;
-    color: #4F6F52;
+    background-color: rgb(236 227 206);
+    color: rgb(79 111 82);
 }
 
 /* Header styles */
 header {
-    background-color: #435942;
-    color: #ECE3CE;
+    background-color: rgb(67 89 66);
+    color: rgb(236 227 206);
     text-align: center;
     padding: 40px 0;
 }
@@ -30,15 +29,16 @@ nav {
 }
 
 nav a {
-    color: #ECE3CE;
+    font-size: 18px;
+    transition: 0.3s;
+    color: rgb(236 227 206);
     text-decoration: none;
     margin: 20px;
-    font-size: 18px;
-    transition: color 0.3s;
+
 }
 
 nav a:hover {
-    color: #739072;
+    color: rgb(115 144 114);
 }
 
 /* Main container styles */
@@ -46,8 +46,8 @@ nav a:hover {
     max-width: 800px;
     margin: 20px auto;
     padding: 50px 20px;
-    background-color: #ede8da;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(237 232 218);
+    box-shadow: 0 0 10px rgba(0 0 0 10%);
     border-radius: 5px;
 }
 
@@ -59,7 +59,7 @@ nav a:hover {
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #3A4D39;
+    color: rgb(58 77 57);
 }
 
 p {
@@ -69,7 +69,7 @@ p {
 
 /* Card styles */
 .card {
-    background-color: #ede8da;
+    background-color: rgb(237 232 218);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
@@ -79,13 +79,13 @@ p {
 }
 
 .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(rgba(0  0  0 20.0%))
 }
 
 .card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #739072;
+    color: rgb(115 144 114);
 }
 
 .card p {
@@ -110,7 +110,7 @@ p {
     transform: scale(1.5);
     z-index: 10;
     position: relative;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(rgba(0  0  0 50.0%));
 }
 
 /* Overlay background */
@@ -120,7 +120,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(rgba(0  0  0 50.0%));
     z-index: 9;
     display: none;
 }
@@ -140,7 +140,7 @@ label {
     margin-bottom: 10px;
 }
 
-input, textarea {
+input textarea {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -156,7 +156,7 @@ textarea {
 button {
     font-size: 16px;
     padding: 10px;
-    background-color: #4F6F52;
+    background-color: rgb(79 111 82);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -165,26 +165,25 @@ button {
 }
 
 button:hover {
-    background-color: #3A4D39;
+    background-color: rgb(58 77 57);
 }
 
 /* Experience grid styles */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill minmax(150px 1fr));
     gap: 20px;
     margin-top: 20px;
 }
 
 .experience-card {
-    background-color: #ede8da;
+    background-color: rgb(237 232 218);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    transition: transform 0.3s;
     overflow: hidden;
-    transition: transform 0.3s, width 0.3s, padding 0.3s; /* Add width and padding to the transition */
+    transition: transform 0.3s width 0.3s padding 0.3s; /* Add width and padding to the transition */
 }
 
 .experience-card img {
@@ -199,11 +198,11 @@ button:hover {
     transform: scale(1.3); /* Scale the container */
     z-index: 10;
     position: relative;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(rgba(0  0  0 50.0%));
     overflow: visible;
     width: 120%; /* Adjust to your preferred width */
     max-width: 1200px; /* Optional: to prevent it from becoming too wide */
-    padding: 20px 20px;
+    padding: 20px;
 }
 
 .experience-card.expanded img {
