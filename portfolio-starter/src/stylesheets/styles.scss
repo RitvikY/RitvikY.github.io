@@ -7,14 +7,14 @@ body h1 h2 p {
 
 /* Global styles */
 body {
-  background-color: rgb(236 227 206);
-  color: rgb(79 111 82);
+  background-color: rgb(236, 227, 206);
+  color: rgb(79, 111, 82);
 }
 
 /* Header styles */
 header {
-  background-color: rgb(67 89 66);
-  color: rgb(236 227 206);
+  background-color: rgb(67, 89, 66);
+  color: rgb(236, 227, 206);
   text-align: center;
   padding: 40px 0;
 }
@@ -31,14 +31,14 @@ nav {
 nav a {
   font-size: 18px;
   transition: 0.3s;
-  color: rgb(236 227 206);
+  color: rgb(236, 227, 206);
   text-decoration: none;
   margin: 20px;
 
 }
 
 nav a:hover {
-  color: rgb(115 144 114);
+  color: rgb(115, 144, 114);
 }
 
 /* Main container styles */
@@ -46,8 +46,8 @@ nav a:hover {
   max-width: 800px;
   margin: 20px auto;
   padding: 50px 20px;
-  background-color: rgb(237 232 218);
-  box-shadow: 0 0 10px rgba(0 0 0 10%);
+  background-color: rgb(237, 232, 218);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -59,7 +59,7 @@ nav a:hover {
 h2 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: rgb(58 77 57);
+  color: rgb(58, 77, 57);
 }
 
 p {
@@ -69,7 +69,7 @@ p {
 
 /* Card styles */
 .card {
-  background-color: rgb(237 232 218);
+  background-color: rgb(237, 232, 218);
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 20px;
@@ -79,13 +79,13 @@ p {
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgba(rgba(0  0  0 20.0%))
+  box-shadow: 0 0 10px (0,  0,  0, 0.2);
 }
 
 .card h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: rgb(115 144 114);
+  color: rgb(115, 144, 114);
 }
 
 .card p {
@@ -110,7 +110,7 @@ p {
   transform: scale(1.5);
   z-index: 10;
   position: relative;
-  box-shadow: 0 0 20px rgba(rgba(0  0  0 50.0%));
+  box-shadow: 0 0 20px rgba(0,  0,  0, 0.5);
 }
 
 /* Overlay background */
@@ -120,7 +120,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(rgba(0  0  0 50.0%));
+  background-color: rgba(0,  0,  0, 0.5);
   z-index: 9;
   display: none;
 }
@@ -156,7 +156,7 @@ textarea {
 button {
   font-size: 16px;
   padding: 10px;
-  background-color: rgb(79 111 82);
+  background-color: rgb(79, 111, 82);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -165,7 +165,7 @@ button {
 }
 
 button:hover {
-  background-color: rgb(58 77 57);
+  background-color: rgb(58, 77, 57);
 }
 
 /* Experience grid styles */
@@ -177,7 +177,7 @@ button:hover {
 }
 
 .experience-card {
-  background-color: rgb(237 232 218);
+  background-color: rgb(237, 232, 218);
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
@@ -198,7 +198,7 @@ button:hover {
   transform: scale(1.3); /* Scale the container */
   z-index: 10;
   position: relative;
-  box-shadow: 0 0 20px rgba(rgba(0  0  0 50.0%));
+  box-shadow: 0 0 20px rgba(0,  0,  0, 0.5);
   overflow: visible;
   width: 120%; /* Adjust to your preferred width */
   max-width: 1200px; /* Optional: to prevent it from becoming too wide */

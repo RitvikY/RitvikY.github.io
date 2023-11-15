@@ -107,7 +107,7 @@ const imageLoader = {
       optimizationLevel: 7,
     },
     pngquant: {
-      quality: '65-90',
+      quality: [0.65, 0.90],
       speed: 4,
     },
     mozjpeg: {
@@ -160,7 +160,6 @@ module.exports = [
   css,
   sass,
   less,
-  images,
   fonts,
   videos,
 ];

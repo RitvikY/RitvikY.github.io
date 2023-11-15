@@ -23,19 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
           const otherExpandedContent = expandedCard.querySelector('.expanded-content')
           if (otherExpandedContent) {
             otherExpandedContent.classList.add('hidden')
-            otherExpandedContent.style.display = ''
           }
         }
+
         // Expand the clicked card
         card.classList.add('expanded')
         expandedContent.classList.remove('hidden')
-        expandedContent.style.display = 'block'
         overlay.classList.add('show')
       } else {
         // Close the expanded card
         card.classList.remove('expanded')
         expandedContent.classList.add('hidden')
-        expandedContent.style.display = ''
         overlay.classList.remove('show')
       }
     })
@@ -53,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const expandedContent = expandedCard.querySelector('.expanded-content')
         if (expandedContent) {
           expandedContent.classList.add('hidden')
-          expandedContent.style.display = ''
         }
       }
       overlay.classList.remove('show')
