@@ -1,9 +1,0 @@
-{
-  "recommendations": [
-    "editorconfig.editorconfig",
-    "dbaeumer.vscode-eslint",
-    "christian-kohler.npm-intellisense",
-    "formulahendry.auto-rename-tag",
-    "streetsidesoftware.code-spell-checker"
-  ]
-}
