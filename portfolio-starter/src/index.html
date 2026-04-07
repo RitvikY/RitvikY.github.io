@@ -3,122 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritvik Yaragudipati - Computer Science student at University of Maryland. Software engineer, researcher, and technology consultant.">
+    <title>Ritvik Yaragudipati | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+        <nav id="navbar">
+            <span class="nav-logo">RY</span>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
+        <div class="hero">
+            <h1>Ritvik Yaragudipati</h1>
+            <p class="hero-tagline">CS + Cybersecurity @ University of Maryland</p>
+            <p class="hero-sub">Software Engineer &middot; Researcher &middot; Technology Consultant</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
     </header>
 
-    <div class="container content-section" id="about">
-        <h2>About Me</h2>
-        <p>Hi! My name is Ritvik Yaragudipati. I am currently Senior pursuing a Computer Science major with a minor in Cybersecurity (ACES) at the University of Maryland. I am currently involved with the Quest Honors consulting program as well as the Gemstone Honors research program. My interests include data analysis, software engineering, full stack development, and technology consulting.<br></p>
+    <main>
+        <section class="container content-section fade-in" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Ritvik &mdash; a senior at the University of Maryland studying Computer Science with a
+                minor in Cybersecurity (ACES). I'm involved with the Quest Honors consulting program and the
+                Gemstone Honors research program, where I lead research on AI-driven cancer detection.
+            </p>
+            <p>
+                My interests span data analysis, software engineering, full-stack development, and technology
+                consulting. I love building systems that solve real problems and thrive in environments where
+                I can learn fast and ship meaningful work.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:yaragudi.ritvik@gmail.com" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    yaragudi.ritvik@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/ritviky913/" target="_blank" rel="noopener noreferrer" class="contact-chip">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </section>
 
-        <p> <br><br>Contact Information:</p>
-        <p>
+        <section class="container content-section fade-in" id="projects">
+            <h2>Projects</h2>
+            <div class="cards-grid">
+                <div class="card" data-modal="modal-lung-cancer">
+                    <div class="card-header">
+                        <div class="card-icon">&#129516;</div>
+                        <div>
+                            <h3>AI Detection for Non-Small Cell Lung Cancer</h3>
+                            <p class="card-subtitle">Gemstone Honors Program &mdash; Team DOC</p>
+                        </div>
+                    </div>
+                    <p class="card-preview">Spearheading AI research to improve cancer detection accuracy beyond 88.6% using deep learning techniques.</p>
+                    <span class="card-cta">Click to learn more &rarr;</span>
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">CNNs</span>
+                        <span class="tag">GANs</span>
+                    </div>
+                </div>
 
+                <div class="card" data-modal="modal-chatroom">
+                    <div class="card-header">
+                        <div class="card-icon">&#128172;</div>
+                        <div>
+                            <h3>Realtime Chatroom</h3>
+                            <p class="card-subtitle">Full Stack WebSocket Application</p>
+                        </div>
+                    </div>
+                    <p class="card-preview">Full-stack real-time chat application with user registration and WebSocket messaging.</p>
+                    <span class="card-cta">Click to learn more &rarr;</span>
+                    <div class="tag-row">
+                        <span class="tag">Java</span>
+                        <span class="tag">Spring</span>
+                        <span class="tag">React</span>
+                        <span class="tag">WebSocket</span>
+                        <span class="tag">STOMP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            All inquiries can be sent to my email: <a href = "mailto: yaragudi.ritvik@gmail.com">yaragudi.ritvik@gmail.com</a>
-           <br> LinkedIn: <a href="https://www.linkedin.com/in/ritviky913/">Click Here</a>
+        <section class="container content-section fade-in" id="experience">
+            <h2>Work Experience</h2>
+            <div class="experience-grid">
+                <div class="card experience-card" data-modal="modal-capital-one">
+                    <img src="images/capitalOneJPG.png" alt="Capital One logo">
+                    <h3>Capital One</h3>
+                    <p class="card-subtitle">Software Engineering Intern</p>
+                    <span class="card-cta">Details &rarr;</span>
+                </div>
+                <div class="card experience-card" data-modal="modal-lockheed">
+                    <img src="images/LMPNG.png" alt="Lockheed Martin logo">
+                    <h3>Lockheed Martin</h3>
+                    <p class="card-subtitle">Software Engineering Intern</p>
+                    <span class="card-cta">Details &rarr;</span>
+                </div>
+                <div class="card experience-card" data-modal="modal-score">
+                    <img src="images/ScorePng.jpeg" alt="Score Association logo">
+                    <h3>Score Association</h3>
+                    <p class="card-subtitle">Data Analytics Consultant</p>
+                    <span class="card-cta">Details &rarr;</span>
+                </div>
+                <div class="card experience-card" data-modal="modal-edlyft">
+                    <img src="images/edlyftpng.png" alt="Edlyft logo">
+                    <h3>Edlyft</h3>
+                    <p class="card-subtitle">CS Intern</p>
+                    <span class="card-cta">Details &rarr;</span>
+                </div>
+            </div>
+        </section>
 
-           <br> I look forward to connecting with you!</p>
-    </div>
+        <section class="container content-section fade-in" id="contact">
+            <h2>Contact Me</h2>
+            <p class="section-intro">Have a question, opportunity, or just want to say hi? Send me a message and I'll get back to you.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+                </div>
+                <button type="submit" id="submit-btn">Send Message</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+        </section>
+    </main>
 
-    <div class="container content-section" id="projects">
-        <h2>Projects</h2>
-        <div class="card">
+    <footer>
+        <p>&copy; 2024 Ritvik Yaragudipati &middot; Built with care</p>
+        <div class="footer-links">
+            <a href="mailto:yaragudi.ritvik@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/ritviky913/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+        <div class="modal" id="modal-lung-cancer">
+            <button class="modal-close" aria-label="Close">&times;</button>
             <h3>AI Detection for Non-Small Cell Lung Cancer</h3>
-            <p>Detection of Cancer (Team DOC) – Gemstone Honors Program</p>
-            
-             <div class="expanded-content hidden">
-                    <ul>
-                        <li>Spearheading research to enhance the efficiency of artificial intelligence models in detecting Non-Small Cell Lung Cancer beyond the existing 88.6% accuracy</li>
-                        <li>Designing a cost-effective and accessible detection model specifically tailored for implementation in third-world countries. Leveraging Python and cutting-edge tools including Tensorflow, Deep Learning, GANs, CNNs, etc.</li>
-                    </ul>
-
-                </div>
+            <p class="modal-subtitle">Gemstone Honors Program &mdash; Team DOC</p>
+            <ul>
+                <li>Spearheading research to enhance the efficiency of AI models in detecting Non-Small Cell Lung Cancer beyond the existing 88.6% accuracy benchmark.</li>
+                <li>Designing a cost-effective and accessible detection model specifically tailored for implementation in resource-limited settings, leveraging Python, TensorFlow, Deep Learning, GANs, and CNNs.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">CNNs</span>
+                <span class="tag">GANs</span>
+            </div>
         </div>
-        <div class="card">
+
+        <div class="modal" id="modal-chatroom">
+            <button class="modal-close" aria-label="Close">&times;</button>
             <h3>Realtime Chatroom</h3>
-            <div class="expanded-content hidden">
-                <p>Developed a WebSocket-based full stack chatroom application with user registration, utilizing Java, Spring Framework, and Hibernate for backend API’s. Implemented the user interface using React, HTML, CSS, Javascript, and the STOMP messaging protocol, with future deployment planned on a MySQL</p>
+            <p class="modal-subtitle">Full Stack WebSocket Application</p>
+            <ul>
+                <li>Developed a WebSocket-based full-stack chatroom application with user registration, utilizing Java, Spring Framework, and Hibernate for backend APIs.</li>
+                <li>Implemented the user interface using React, HTML, CSS, and JavaScript with the STOMP messaging protocol over WebSockets for real-time bidirectional communication.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Spring</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">React</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">STOMP</span>
+            </div>
+        </div>
 
+        <div class="modal" id="modal-capital-one">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-company">
+                <img src="images/capitalOneJPG.png" alt="Capital One logo">
+                <div>
+                    <h3>Capital One</h3>
+                    <p class="modal-subtitle">Software Engineering Intern</p>
+                </div>
+            </div>
+            <ul>
+                <li>Developed an AWS Fargate application to detect credit card fraud transactions and integrate data into a PostgreSQL database, leveraging Java, Spring Boot, Kafka, Mockito, and Maven.</li>
+                <li>Incorporated the application into production through a Jenkins CI/CD pipeline, implementing automated integration, testing, and deployment workflows.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">AWS Fargate</span>
+                <span class="tag">Kafka</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Jenkins</span>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-lockheed">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-company">
+                <img src="images/LMPNG.png" alt="Lockheed Martin logo">
+                <div>
+                    <h3>Lockheed Martin</h3>
+                    <p class="modal-subtitle">Software Engineering Intern</p>
+                </div>
+            </div>
+            <ul>
+                <li>Constructed a live analytical dashboard via the ELK stack, with Kibana and Vega for custom visualizations. Processed DIS simulation data through Elasticsearch and Logstash for real-time military insights.</li>
+                <li>Developed an ActiveMQ listener Python script incorporating the STOMP.py library and Apache ActiveMQ Artemis to transform DIS packets from Lockheed simulations into JSON format.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">ELK Stack</span>
+                <span class="tag">Kibana</span>
+                <span class="tag">Elasticsearch</span>
+                <span class="tag">ActiveMQ</span>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-score">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-company">
+                <img src="images/ScorePng.jpeg" alt="Score Association logo">
+                <div>
+                    <h3>Score Association</h3>
+                    <p class="modal-subtitle">Data Analytics Consultant</p>
+                </div>
+            </div>
+            <ul>
+                <li>Conducted in-depth analysis of Facebook and Google Business engagement trends for Score Association's 256 offices using OLS regression models with Pandas, Statsmodel, and Scikit-learn.</li>
+                <li>Applied NLP and Sentiment Analysis techniques on a dataset of over 100,000 observations using NumPy, Matplotlib, NLTK, and Seaborn, resulting in recommendations yielding up to 14% improved post retention.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">NLP</span>
+                <span class="tag">NLTK</span>
+                <span class="tag">Seaborn</span>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-edlyft">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-company">
+                <img src="images/edlyftpng.png" alt="Edlyft logo">
+                <div>
+                    <h3>Edlyft</h3>
+                    <p class="modal-subtitle">Computer Science Intern</p>
+                </div>
+            </div>
+            <ul>
+                <li>Mentored 140 undergraduate students in advanced Java Object-Oriented Programming, achieving a 23% average grade improvement over the semester.</li>
+            </ul>
+            <div class="tag-row">
+                <span class="tag">Java</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Mentoring</span>
             </div>
         </div>
     </div>
 
-    <div class="container content-section" id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience-grid">
-            <div class="card">
-                <img src="images/capitalOneJPG.png" alt="Description of image">
-                <h3>Capital One</h3>
-                <div class="expanded-content hidden">
-                    <p>Software Engineering Intern</p>
-                    <ul>
-                        <li>Developing an AWS Fargate application to effectively detect credit card fraud transactions and integrate data into a PostgreSQL database while leveraging Java, Spring Boot Kafka, Mockito, and Maven build automation.</li>
-                        <li>Incorporating application into production environment through a Jenkins pipeline, while implementing automated CI/CD processes to facilitate efficient integration, testing, and deployment.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/LMPNG.png" alt="Description of image">
-                <h3>Lockheed Martin </h3>
-                <div class="expanded-content hidden">
-                    <p>Software Engineering Intern</p>
-                    <ul>
-                        <li>Constructed a live analytical dashboard via ELK stack, with Kibana and Vega employed for creating custom visualizations. Processed DIS simulation data through Elasticsearch and Logstash, providing comprehensive real-time insights for military</li>
-                        <li>Developed an ActiveMQ listener Python script incorporating the STOMP.py library and Apache ActiveMQ Artemis to transform DIS packets from Lockheed simulations into JSON format compatible with</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/ScorePng.jpeg" alt="Description of image">
-                <h3>Score Association</h3>
-                <div class="expanded-content hidden">
-                    <p>Data Analytics Consultant</p>
-                    <ul>
-                        <li>Conducted in-depth analysis of Facebook and Google Business engagement trends for Score Association's 256 offices, employing OLS regression models with Pandas, Statsmodel, and Scikit-learn</li>
-                        <li>Utilized Natural Language Processing and Sentiment Analysis techniques on Score's dataset of over 100,000 observations using NumPy, Matplotlib, NLTK, and Seaborn to optimize post retention, resulting in regional and national recommendations for up to 14% improved</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <img src="images/edlyftpng.png" alt="Description of image">
-                <h3>Edlyft</h3>
-                <div class="expanded-content hidden">
-                    <p>Computer Science Intern</p>
-                    <ul>
-                        <li>Mentored 140 undergraduate students in advanced Java Object Oriented Programming, achieving a 23% average grade improvement last semester</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container content-section" id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form" >
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-    <div class="overlay-background"></div>
-
+    <script src="javascripts/index.js"></script>
 </body>
 </html>
